@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <body>
+      <div class="container">
+          <form name="myform" method="POST" class="form-group" action="">
+              <h2 style="text-align: center; font-weight: bold; font-size:45px">Create your account</h2>
+              <div class="row jumbotron">
+
+                <div class="col-md-6">
+                  <label for="firstname">First Name</label>
+                  <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="lastname">Last Name</label>
+                  <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email">Email</label>
+                  <input type="text" class="form-control" name="email" placeholder="Email">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="address1">Address Line1</label>
+                  <input type="text" class="form-control" name="address1" placeholder="Address Line1">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="address2">address Line2</label>
+                  <input type="text" class="form-control" name="address2" placeholder="Address Line2">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="cityname">City</label>
+                  <input type="text" class="form-control" name="cityname" placeholder="City Name">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="statename">State</label>
+                  <input type="text" class="form-control" name="statename" placeholder="State Name">
+                </div>
+
+                <div class="col-md-2">
+                  <label for="zipcode">Zip Code</label>
+                  <input type="text" class="form-control" name="zipcode" placeholder="Zip Code">
+                </div>
+                <br>
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-primary" >Submit</button>
+                </div>
+
+              </div>
+          </form>
+
+      </div>
+  </body>
+
+{% endblock  %}
+
